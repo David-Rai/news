@@ -1,0 +1,121 @@
+@font-face {
+    font-family: news;
+    src: url(Assets/NeueHaasDisplayMediu.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: news;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+.page1{
+    max-height: 100vh;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+nav{
+    height: 20vh;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+nav input{
+    height: 2rem;
+    width: 20rem;
+    border: none;
+    padding-left: 1rem;
+    border-radius: 0.5rem;
+    border: 2px solid black;
+}
+nav .tnav{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+nav .bnav{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.typeBtn{
+    border: none;
+    height: 3rem;
+    width: 10rem;
+    border-radius: 0.5rem;
+}
+.newsBody{
+    max-height: 80vh;
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+.ndetail{
+    height: 70%;
+    width: 25%;
+    background-color:#F0F0F0;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    transition: all 1s;
+}
+.ndetail:hover{
+    transform: scale(1.1);
+}
+.ndetail img{
+height: 60%;
+width: 80%;
+margin: 2rem;
+border-radius: 0.5rem;
+}
+.ntitle{
+margin: 1rem 0rem;
+width: 80%;
+height: 5rem;
+text-overflow: ellipsis;
+}
+.nsee{
+ margin-bottom:2rem ;
+ text-decoration: none;
+ height: 3rem;
+ width: 6rem;
+ background-color: red;
+ border-radius:0.5rem ;
+ color: white;
+ padding: 0.5rem 0.5rem 0rem 0.5rem;
+}
+.search{
+    padding-left: 2rem;
+    font-size: 20px;
+    color: rgb(199, 8, 8);
+}
+.bnav button:hover{
+    opacity: 0.7;
+}
+.logo{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    left: 10%;
+    border-radius: 50%;
+}
