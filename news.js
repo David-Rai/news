@@ -1,16 +1,18 @@
-let btn = document.querySelector(".search");
+let sbtn = document.querySelector(".search");
 let newsBody = document.querySelector(".newsBody");
 let nbtn = document.querySelectorAll("nav .bnav button");
 let inputValue = document.querySelector("nav input");
 
 nbtn.forEach(btn => {
-    btn.onclick = () => {
+    btn.addEventListener("click",()=>{
         inputValue.value = btn.value;
         getData();
-    };
-});
+    })
+})
 
-btn.onclick = getData;
+sbtn.addEventListener("click",function (){
+getData()
+})
 
 async function getData() {
     let key = "1db2c199f2b94fac969d9d01d9aeb9cf";
@@ -23,7 +25,7 @@ async function getData() {
 function putData(data) {
     newsBody.innerHTML = "";
 
-    data.articles.forEach(d => {
+    data.articles.forEach( (d) => {
         if (d.urlToImage !== null) {
             newsBody.innerHTML += `    
                 <div class="ndetail">
